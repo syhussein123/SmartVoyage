@@ -16,6 +16,11 @@ Each data point includes both raw features and our engineered variables. Core in
 
 The unit of analysis is therefore a (country, year) pair, and overall the objective is to extract meaningful insights about how tourism desirability changes over time and across different countries using a combination of supervised and unsupervised learning methods and variation algorithms.
 
+## This repository includes:
+* Full project colab notebook (CS483 Final code.ipynb)
+* Raw datasets
+* Cleaned dataset used for modeling
+
 ## Dataset
 We combined two datasets:
 * Tourism Data: International arrivals, tourism receipts, GDP -> https://www.kaggle.com/datasets/bushraqurban/tourism-and-economic-impact 
@@ -29,13 +34,15 @@ We combined two datasets:
 * Merged datasets on (country, year)
 
 Final Dataset consisted of: 
-* ~ 2,395 rows
+* 2,395 rows
 * 145 countries
 
 ## Algorithms and Evaluation Metrics
 
 ### Classification: 
 Used to label each country-year as increasing, stable, or decreasing
+* Random Forest
+* logistic Regression
 * Gradient Boosted Trees (GBT)
 * Decision Tree
 * Multilayer Perceptron (MLP)
@@ -55,7 +62,7 @@ Ranked countries based on tourism performance and climate
 
 ## Conclusion
 This project demonstrates that: 
-* Combining tourism + climate data provides deeper insights
+* Combining tourism and climate data provides deeper insights
 * Different algorithms reveal different perspectives
 * Simple models work well for stable patterns, but struggle with volatile trends
 Using multiple approaches allowed us to better understand global travel trends and destination desirability. 
